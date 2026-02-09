@@ -269,7 +269,7 @@ export const WORKS_DATA = [
     role: "퍼블리싱 리뉴얼 100% / 운영 전담",
     year: "2014/08-2015/06",
     device: "PC / Mobile",
-    category: "E-Commerce / Global",
+    category: "E-Commerce / EDM",
     link: "",
   },
 ].map((item) => ({
