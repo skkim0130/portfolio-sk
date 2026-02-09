@@ -1,0 +1,19 @@
+@use "@/assets/scss/utils" as *;
+
+.ui-section-title {
+  display: flex;
+  align-items: center;
+  gap: space("sm");
+  font-size: font("md");
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: space("sm");
+
+  &::before {
+    content: "";
+    width: fn-rem(4);
+    height: fn-rem(16);
+    background: var(--primary);
+    border-radius: radius("sm");
+  }
+}

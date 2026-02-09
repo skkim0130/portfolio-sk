@@ -1,0 +1,8 @@
+@use "@/assets/scss/utils" as *;
+
+.section {
+  position: relative;
+  max-width: fn-rem(960);
+  margin: 0 auto;
+  padding: fn-rem(120) fn-rem(30);
+}

@@ -1,0 +1,7 @@
+@use "functions" as *;
+
+@mixin respond($point) {
+  @media (max-width: #{bp($point)}) {
+    @content;
+  }
+}

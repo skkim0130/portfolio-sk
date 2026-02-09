@@ -1,0 +1,71 @@
+@use "sass:math";
+
+@function fn-rem($px, $base: 16) {
+  @return (math.div($px, $base)) * 1rem;
+}
+
+$base-white: #ffffff;
+$base-black: #111111;
+$base-primary: #4f6df5;
+$base-primary-light: #3b5cff;
+$colors: (
+  "primary": $base-primary,
+  "white": $base-white,
+  "gray-50": #f8fafc,
+  "gray-100": #f1f3f6,
+  "gray-200": #e1e4e9,
+  "gray-400": #555962,
+  "gray-500": #2b2e33,
+  "border": #d8dbe0,
+  "dark": #191f28,
+);
+
+$theme-colors: (
+  // Dark (Default)
+  "bg": #0e1526,
+  "text": $base-white,
+  "primary": $base-primary,
+  "line": rgba(255, 255, 255, 0.08),
+  // Light Mode
+  "bg-light": $base-white,
+  "text-light": $base-black,
+  "primary-light": $base-primary-light,
+  "line-light": rgba(0, 0, 0, 0.08)
+);
+
+$radius: (
+  "none": 0,
+  "sm": fn-rem(6),
+  "md": fn-rem(10),
+  "lg": fn-rem(16),
+  "xl": fn-rem(24),
+  "full": 9999px,
+);
+
+$font: (
+  "xs": fn-rem(11),
+  "sm": fn-rem(13),
+  "md": fn-rem(15),
+  "lg": fn-rem(18),
+  "xl": fn-rem(24),
+  "hero": fn-rem(44),
+);
+
+$space: (
+  "xs": fn-rem(4),
+  "sm": fn-rem(8),
+  "md": fn-rem(16),
+  "lg": fn-rem(24),
+  "xl": fn-rem(32),
+  "xxl": fn-rem(48),
+);
+
+$breakpoints: (
+  "sm": 480px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1440px,
+);
+
+$font-family-default: "Pretendard", "Malgun Gothic", "맑은 고딕", "돋움", dotum,
+  sans-serif;

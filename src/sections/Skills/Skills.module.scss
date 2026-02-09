@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: space("lg");
+
+  @include respond("md") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: space("xl") space("lg");
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: radius("md");
+}
+
+.stackGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: space("xs");
+  margin-top: space("md");
+}
+
+.tag {
+  font-size: font("sm");
+  color: var(--text-muted);
+  background: var(--surface-subtle);
+  padding: fn-rem(4) space("sm");
+  border: 1px solid var(--line);
+  border-radius: radius("sm");
+  line-height: 1.4;
+  white-space: nowrap;
+}

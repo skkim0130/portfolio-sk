@@ -1,0 +1,26 @@
+.titleWrap {
+  margin-bottom: space("xl");
+}
+
+.title {
+  font-size: font("xl");
+  font-weight: 600;
+  margin-bottom: space("sm");
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.desc {
+  font-size: font("md");
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* alignment */
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}

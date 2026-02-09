@@ -1,0 +1,21 @@
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: space("xs");
+
+  .item {
+    font-size: font("md");
+    line-height: 1.6;
+    color: var(--text-muted);
+    position: relative;
+    padding-left: space("md");
+    word-break: keep-all;
+
+    &::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--text-muted);
+    }
+  }
+}
