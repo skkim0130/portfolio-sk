@@ -135,7 +135,7 @@ export const WORKS_DATA = [
   {
     id: 11,
     title: "노보 노디스크 카카오톡 채널",
-    desc: "카카오톡 채널 신규 구축 및 운영",
+    desc: "카카오톡 인앱 브라우저 환경 콘텐츠 구축 및 운영",
     keyFeatures: [
       "카카오톡 인앱 환경 제약을 고려한 모바일 전용 UI 퍼블리싱",
       "인앱 브라우저 환경에서의 콘텐츠 운영 및 유지보수",
@@ -190,12 +190,12 @@ export const WORKS_DATA = [
     desc: "글로벌 사이트 운영 및 유지보수",
     keyFeatures: [
       "11개국 글로벌 사이트 콘텐츠 운영",
-      "이벤트 페이지 및 EDM 뉴스레터(이메일) 제작",
+      "이벤트 페이지 및 EDM 콘텐츠 퍼블리싱",
     ],
     role: "운영 리드",
     year: "2018/04-2019/10",
     device: "Responsive",
-    category: "Global Brand Mall / eDM",
+    category: "Brand Mall / EDM",
     link: "",
   },
   {
@@ -264,7 +264,7 @@ export const WORKS_DATA = [
     keyFeatures: [
       "국문/중문 사이트 콘텐츠 운영",
       "국문 PC 메인 페이지 리뉴얼",
-      "프로모션 EDM 뉴스레터 퍼블리싱 및 운영",
+      "프로모션 EDM 콘텐츠 퍼블리싱",
     ],
     role: "퍼블리싱 리뉴얼 100% / 운영 전담",
     year: "2014/08-2015/06",
