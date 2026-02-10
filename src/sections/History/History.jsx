@@ -12,26 +12,23 @@ export default function History() {
         align="center"
       />
 
-      <div className={styles.grid}>
+      <ul className={styles.grid}>
         {HISTORY_DATA.map((item, idx) => (
-          <article key={idx} className={styles.card}>
-            <header className={styles.cardHead}>
-              <div className={styles.headTop}>
+          <li key={idx} className={styles.card}>
+            <div className={styles.cardTop}>
+              <div className={styles.compInfo}>
                 <h3 className={styles.company}>{item.company}</h3>
-
-                <div className={styles.periodBox}>
-                  <span className={styles.period}>{item.period}</span>
-                  <span className={styles.duration}>{item.duration}</span>
-                </div>
+                <p className={styles.period}>
+                  {item.period} <span>{item.duration}</span>
+                </p>
               </div>
-
               <p className={styles.role}>{item.role}</p>
-            </header>
+            </div>
 
             {item.desc && <p className={styles.summary}>{item.desc[0]}</p>}
-          </article>
+          </li>
         ))}
-      </div>
+      </ul>
     </Section>
   );
 }

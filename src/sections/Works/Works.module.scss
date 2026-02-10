@@ -14,8 +14,7 @@
   border: 1px solid var(--line);
   border-radius: radius("lg");
   overflow: hidden;
-  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-4px);
@@ -26,13 +25,14 @@
 }
 
 .cardButton {
+  display: block;
   width: 100%;
   text-align: left;
 
   &:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 4px;
-    border-radius: radius("lg");
+    border-radius: inherit;
   }
 }
 
@@ -46,6 +46,7 @@
   img {
     width: 100%;
     object-fit: cover;
+    object-position: top;
   }
 }
 
@@ -65,42 +66,42 @@
 
 .txtbox {
   padding: space("lg");
+  display: flex;
+  flex-direction: column;
+  gap: space("xs");
+  line-height: 1.4;
 
   .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: space("sm");
+  }
 
-    .category {
-      font-size: font("xs");
-      font-weight: 700;
-      color: var(--primary);
-      text-transform: uppercase;
-    }
+  .category {
+    font-size: font("xs");
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
 
-    .year {
-      font-size: font("xs");
-      color: var(--text-muted);
-      font-family: var(--font-mono, monospace);
-    }
+  .year {
+    font-size: font("xs");
+    color: var(--text-muted);
+    font-family: var(--font-mono, monospace);
   }
 
   .title {
-    margin-bottom: space("xs");
     font-size: font("lg");
     font-weight: 700;
     color: var(--text);
-    line-height: 1.4;
   }
 
   .desc {
-    display: -webkit-box;
-    overflow: hidden;
+    display: -webkit-box !important;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: font("sm");
     color: var(--text-muted);
-    line-height: 1.6;
   }
 }

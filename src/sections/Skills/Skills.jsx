@@ -14,9 +14,8 @@ export default function Skills() {
 
       <div className={styles.grid}>
         {SKILLS_DATA.map((group, idx) => (
-          <article key={idx} className={styles.card}>
-            <h3 className="ui-section-title">{group.title}</h3>
-
+          <div key={idx} className={styles.card}>
+            <h3 className={styles.groupTitle}>{group.title}</h3>
             <div className={styles.stackGroup}>
               {group.items.map((tech, i) => (
                 <span key={i} className={styles.tag}>
@@ -24,7 +23,7 @@ export default function Skills() {
                 </span>
               ))}
             </div>
-          </article>
+          </div>
         ))}
       </div>
     </Section>

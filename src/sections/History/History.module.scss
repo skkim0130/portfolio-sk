@@ -14,73 +14,70 @@
   &::before {
     content: "";
     position: absolute;
-    left: fn-rem(-5);
+    left: fn-rem(-5.5);
     top: space("lg");
     width: fn-rem(10);
     height: fn-rem(10);
     border-radius: radius("full");
     background: var(--primary);
     box-shadow: 0 0 0 fn-rem(4) var(--bg);
+    z-index: 1;
   }
-}
 
-.cardHead {
-  display: flex;
-  flex-direction: column;
-  gap: space("xs");
-
-  .headTop {
+  .cardTop {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: space("md");
+    flex-direction: column;
+    gap: space("xs");
 
-    @include respond("sm") {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: space("sm");
+    .compInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: space("md");
+
+      @include respond("sm") {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: space("sm");
+      }
     }
   }
-}
 
-.company {
-  font-size: font("xl");
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--text);
-}
-
-.periodBox {
-  display: flex;
-  align-items: center;
-  gap: space("sm");
+  .company {
+    font-size: font("xl");
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text);
+  }
 
   .period {
+    display: flex;
+    align-items: center;
+    gap: space("sm");
     font-size: font("sm");
     color: var(--text-subtle);
     font-family: var(--font-mono);
     white-space: nowrap;
+
+    span {
+      font-size: font("sm");
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-alpha-10);
+      padding: fn-rem(2) space("sm");
+      border-radius: radius("full");
+    }
   }
 
-  .duration {
-    font-size: font("xs");
-    font-weight: 700;
+  .role {
+    font-size: font("md");
+    font-weight: 600;
     color: var(--primary);
-    background: var(--primary-alpha-10);
-    padding: fn-rem(2) space("sm");
-    border-radius: radius("full");
-    white-space: nowrap;
   }
-}
 
-.role {
-  font-size: font("md");
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.summary {
-  font-size: font("sm");
-  line-height: 1.6;
-  color: var(--text-muted);
+  .summary {
+    font-size: font("sm");
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
 }

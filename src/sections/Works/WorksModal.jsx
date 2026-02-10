@@ -6,53 +6,43 @@ import BulletList from "../../components/common/BulletList/BulletList";
 export default function WorksModal({ project, onClose }) {
   if (!project) return null;
 
-  const safeDateTime = project.year?.split("~")[0].trim().replace(/\//g, "-");
-
   return (
     <Modal isOpen={!!project} onClose={onClose}>
       <div className={styles.worksModal}>
-        {/* Header */}
-        <header className={styles.header}>
-          <p className={styles.category}>{project.category}</p>
+        {/* modalHead */}
+        <div className={styles.modalHead}>
+          <span className={styles.category}>{project.category}</span>
           <h2 className={styles.title}>{project.title}</h2>
-        </header>
+        </div>
 
         {/* Meta */}
-        <dl className={styles.metaList}>
-          <div className={styles.metaItem}>
-            <dt>수행기간</dt>
-            <dd>
-              <time dateTime={safeDateTime}>{project.year}</time>
-            </dd>
-          </div>
-
-          <div className={styles.metaItem}>
-            <dt>디바이스</dt>
-            <dd>{project.device}</dd>
-          </div>
-
-          <div className={styles.metaItem}>
-            <dt>역할</dt>
-            <dd>{project.role}</dd>
-          </div>
-
+        <ul className={styles.metaList}>
+          <li className={styles.metaItem}>
+            <span className={styles.label}>수행기간</span>
+            <span className={styles.value}>{project.year}</span>
+          </li>
+          <li className={styles.metaItem}>
+            <span className={styles.label}>디바이스</span>
+            <span className={styles.value}>{project.device}</span>
+          </li>
+          <li className={styles.metaItem}>
+            <span className={styles.label}>역할</span>
+            <span className={styles.value}>{project.role}</span>
+          </li>
           {project.link && (
-            <div className={styles.metaItem}>
-              <dt>Link</dt>
-              <dd>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.link}
-                  aria-label="사이트 새 창 열기"
-                >
-                  Visit <MdArrowOutward aria-hidden />
-                </a>
-              </dd>
-            </div>
+            <li className={styles.metaItem}>
+              <span className={styles.label}>Link</span>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                바로가기 <MdArrowOutward />
+              </a>
+            </li>
           )}
-        </dl>
+        </ul>
 
         {/* Content */}
         <div className={styles.content}>
@@ -72,7 +62,7 @@ export default function WorksModal({ project, onClose }) {
         {/* Gallery */}
         <div className={styles.imageGallery}>
           <figure className={styles.imgBox}>
-            <img src={project.img} alt={`${project.title} 대표 이미지`} />
+            <img src={project.img} alt={`${project.title} 메인 이미지`} />
           </figure>
 
           {project.subImgCount > 0 && (

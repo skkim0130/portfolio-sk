@@ -5,8 +5,7 @@
   padding: space("xs");
 }
 
-/* Header */
-.header {
+.modalHead {
   display: flex;
   flex-direction: column;
   gap: space("xs");
@@ -28,21 +27,23 @@
   }
 }
 
-/* Meta */
 .metaList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: space("md");
+  gap: space("lg") space("xl");
   padding: space("lg");
+  background: var(--bg-subtle);
   border: 1px solid var(--line);
   border-radius: radius("lg");
 
   @include respond("md") {
     grid-template-columns: repeat(2, 1fr);
+    gap: space("md") space("lg");
   }
 
   @include respond("sm") {
     grid-template-columns: 1fr;
+    gap: space("sm");
     padding: space("md");
   }
 
@@ -51,33 +52,44 @@
     flex-direction: column;
     gap: space("xs");
 
-    dt {
+    @include respond("sm") {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: space("xs") 0;
+      border-bottom: 1px solid var(--line);
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .label {
       font-size: font("xs");
-      font-weight: 600;
+      font-weight: 700;
       color: var(--text-subtle);
       text-transform: uppercase;
     }
 
-    dd {
-      margin: 0;
+    .value {
       font-size: font("md");
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text);
-      word-break: break-word;
     }
-  }
 
-  .link {
-    display: inline-flex;
-    align-items: center;
-    gap: space("xs");
-    font-weight: 600;
-    color: var(--primary);
-    text-decoration: none;
+    .link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: font("sm");
+      font-weight: 700;
+      color: var(--primary);
+      transition: opacity 0.2s;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -105,7 +117,6 @@
 }
 
 .imgBox {
-  height: min-content;
   margin: 0;
   overflow: hidden;
   border-radius: radius("lg");
@@ -115,6 +126,8 @@
   img {
     width: 100%;
     display: block;
+    object-fit: cover;
+    object-position: top;
   }
 }
 

@@ -19,45 +19,29 @@ export default function Work() {
 
         <ul className={styles.grid}>
           {WORKS_DATA.map((project) => (
-            <li key={project.id}>
-              <article className={styles.card}>
-                <button
-                  type="button"
-                  className={styles.cardButton}
-                  onClick={() => setActiveProject(project)}
-                  aria-haspopup="dialog"
-                >
-                  <div className={styles.thumb}>
-                    <img
-                      src={project.img}
-                      alt={`${project.title} 미리보기`}
-                      loading="lazy"
-                    />
-                    {project.role && (
-                      <span className={styles.badge}>{project.role}</span>
-                    )}
-                  </div>
+            <li key={project.id} className={styles.card}>
+              <button
+                type="button"
+                className={styles.cardButton}
+                onClick={() => setActiveProject(project)}
+                aria-haspopup="dialog"
+              >
+                <div className={styles.thumb}>
+                  <img src={project.img} alt="" loading="lazy" />
+                  {project.role && (
+                    <span className={styles.badge}>{project.role}</span>
+                  )}
+                </div>
 
-                  <div className={styles.txtbox}>
-                    <div className={styles.info}>
-                      <span className={styles.category}>
-                        {project.category}
-                      </span>
-                      <time
-                        className={styles.year}
-                        dateTime={project.year
-                          .split("~")[0]
-                          .replace(/\//g, "-")}
-                      >
-                        {project.year}
-                      </time>
-                    </div>
-
-                    <h3 className={styles.title}>{project.title}</h3>
-                    <p className={styles.desc}>{project.desc}</p>
-                  </div>
-                </button>
-              </article>
+                <div className={styles.txtbox}>
+                  <p className={styles.info}>
+                    <span className={styles.category}>{project.category}</span>
+                    <time className={styles.year}>{project.year}</time>
+                  </p>
+                  <strong className={styles.title}>{project.title}</strong>
+                  <p className={styles.desc}>{project.desc}</p>
+                </div>
+              </button>
             </li>
           ))}
         </ul>

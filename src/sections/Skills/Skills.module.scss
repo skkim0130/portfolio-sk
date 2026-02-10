@@ -15,22 +15,43 @@
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: radius("md");
+  transition: border-color 0.2s ease;
+
+  .groupTitle {
+    position: relative;
+    padding-left: space("md");
+    font-size: font("lg");
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: space("md");
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: fn-rem(4);
+      height: 80%;
+      background: var(--primary);
+      border-radius: radius("full");
+    }
+  }
 }
 
 .stackGroup {
   display: flex;
   flex-wrap: wrap;
   gap: space("xs");
-  margin-top: space("md");
 }
 
 .tag {
   font-size: font("sm");
+  line-height: 1.4;
   color: var(--text-muted);
   background: var(--surface-subtle);
   padding: fn-rem(4) space("sm");
   border: 1px solid var(--line);
   border-radius: radius("sm");
-  line-height: 1.4;
   white-space: nowrap;
 }
