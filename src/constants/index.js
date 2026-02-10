@@ -266,7 +266,7 @@ export const WORKS_DATA = [
       "국문 PC 메인 페이지 리뉴얼",
       "프로모션 EDM 콘텐츠 퍼블리싱",
     ],
-    role: "퍼블리싱 리뉴얼 100% / 운영 전담",
+    role: "퍼블리싱 100% / 운영 전담",
     year: "2014/08-2015/06",
     device: "PC / Mobile",
     category: "E-Commerce / EDM",
