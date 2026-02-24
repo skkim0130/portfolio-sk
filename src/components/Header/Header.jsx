@@ -50,7 +50,7 @@ export default function Header() {
 
         <div className={styles.iconWrap}>
           <a
-            href="https://www.notion.so/2026-2ee1a88239c380de94d1ed9d1f2bf461?source=copy_link"
+            href="https://smoggy-linen-a30.notion.site/2ee1a88239c380de94d1ed9d1f2bf461"
             target="_blank"
             rel="noreferrer"
             className={styles.iconBtn}
