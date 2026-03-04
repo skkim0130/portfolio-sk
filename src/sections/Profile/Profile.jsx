@@ -8,7 +8,7 @@ export default function Profile() {
   return (
     <SectionLayout title="profile">
       <div className={styles.profile}>
-        <div className={styles.avatar}>
+        <div className={styles.profileImg}>
           <img
             src={profileImg}
             alt={`${name} 프로필`}
