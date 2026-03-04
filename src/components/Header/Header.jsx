@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <h1 className={styles.logo}>
-          <a href="/">K.SUNKYUNG</a>
+          <a href="./">K.SUNKYUNG</a>
         </h1>
         <a
           href={PROFILE_DATA.notionUrl}

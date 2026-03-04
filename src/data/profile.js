@@ -1,8 +1,8 @@
 import { PATH } from "@/constants/path";
 
 export const PROFILE_DATA = {
-  nameKo: "김선경",
-  avatar: PATH.PROFILE,
+  name: "김선경",
+  profileImg: PATH.PROFILE,
   role: "Web Publisher",
   intro: "재사용과 유지보수를 고려한 UI 구조로, 확장성과 일관성을 지향합니다.",
   notionUrl:
