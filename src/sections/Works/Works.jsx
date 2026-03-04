@@ -3,7 +3,14 @@ import { MdArrowOutward } from "react-icons/md";
 import ProjectInfo from "./components/ProjectInfo";
 import styles from "./Works.module.scss";
 
+import { PATH } from "@/constants/path";
+import { preloadImage } from "@/utils/preloadImage";
+
 export default function Works({ works, onOpen }) {
+  const handlePreload = (id) => {
+    preloadImage(PATH.WORK_MAIN(id));
+  };
+
   return (
     <SectionLayout title="works">
       <ul className={styles.worksList}>
@@ -12,6 +19,9 @@ export default function Works({ works, onOpen }) {
             <button
               type="button"
               className={styles.card}
+              onMouseEnter={() => handlePreload(project.id)}
+              onFocus={() => handlePreload(project.id)}
+              onTouchStart={() => handlePreload(project.id)}
               onClick={() => onOpen(project.id)}
               aria-label={`${project.title} 상세 보기`}
             >
