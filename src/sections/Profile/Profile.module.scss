@@ -1,11 +1,10 @@
 .profile {
-  display: grid;
-  grid-template-columns: rem(60) 1fr;
+  display: flex;
   gap: space("sm");
 
   &Img {
     width: rem(60);
-    height: rem(60);
+    flex-shrink: 0;
   }
 
   .nameGroup {
