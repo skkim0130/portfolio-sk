@@ -63,8 +63,9 @@ export default function ModalContent({
                 <img
                   src={mainImg}
                   alt={`${title} 대표 화면`}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
+                  fetchpriority="high"
                 />
               </figure>
             )}
