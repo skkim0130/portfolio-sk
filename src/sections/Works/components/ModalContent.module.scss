@@ -1,0 +1,114 @@
+.meta {
+  margin-top: space("xl");
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: space("xl");
+  padding: space("lg");
+  border: 1px solid color("border");
+  border-radius: radius("lg");
+  background: rgba(color("gray-bg"), 0.6);
+
+  @include respond("md") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: space("sm");
+  }
+
+  @include respond("md") {
+    &Item {
+      border-bottom: none;
+      margin: 0;
+      padding: space("sm");
+      border: 1px solid color("border");
+      border-radius: radius("md");
+      background: rgba(color("gray-bg"), 0.5);
+    }
+  }
+
+  &Item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: space("xs");
+
+    .label {
+      font-size: rem(10);
+      color: color("text-weak");
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .value {
+      font-size: font("md");
+      color: color("text");
+      font-weight: 500;
+    }
+  }
+
+  .linkBtn {
+    align-self: flex-start;
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: space("xl");
+  margin-top: space("xl");
+
+  &Title {
+    display: flex;
+    align-items: center;
+    gap: space("md");
+    margin-bottom: space("md");
+    font-size: font("sm");
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: color("text");
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: color("border");
+    }
+  }
+}
+
+.taskList {
+  li {
+    position: relative;
+    margin-bottom: space("sm");
+    padding-left: space("md");
+    font-size: font("base");
+    line-height: 1.6;
+    color: color("text-soft");
+    word-break: keep-all;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: rem(10);
+      width: rem(4);
+      height: rem(4);
+      border-radius: radius("full");
+      background: color("primary");
+    }
+  }
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: space("md");
+
+  .previewImg {
+    overflow: hidden;
+    border: 1px solid color("border");
+    border-radius: radius("lg");
+  }
+}

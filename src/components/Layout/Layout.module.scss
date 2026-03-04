@@ -1,0 +1,23 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  padding-top: $header-height;
+  @include container-center;
+  @include respond("md") {
+    flex-direction: column;
+  }
+}
+
+.mainContent {
+  flex: 1;
+  padding: space("3xl") space("xxl");
+
+  @include respond("md") {
+    padding: space("xl") space("lg");
+  }
+}

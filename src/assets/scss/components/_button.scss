@@ -1,0 +1,33 @@
+@use "@/assets/scss/abstracts" as *;
+
+.btn-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: rem(6);
+  padding: rem(5) 0;
+  font-size: font("md");
+  font-weight: 600;
+  line-height: 100%;
+  color: color("text");
+  transition: color 0.3s ease("default");
+  border-bottom: 1px solid color("text-soft");
+  text-underline-offset: rem(2);
+
+  svg {
+    font-size: rem(14);
+    color: color("text-soft");
+    transition: transform 0.3s ease("default"), color 0.3s ease("default");
+  }
+
+  &:hover {
+    font-weight: 800;
+    color: color("primary");
+    border-color: color("primary");
+
+    svg {
+      color: color("primary");
+      transform: translateY(rem(-4));
+    }
+  }
+}

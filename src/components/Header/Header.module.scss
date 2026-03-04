@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  border-bottom: 1px solid color("hairline");
+  background: rgba(color("white"), 0.6);
+  backdrop-filter: blur(16px);
+  z-index: 10;
+
+  .inner {
+    @include container-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 space("xxl");
+
+    @include respond("md") {
+      padding: 0 space("lg");
+    }
+  }
+
+  .logo {
+    font-size: font("md");
+    font-weight: 800;
+    color: color("text");
+  }
+}

@@ -1,0 +1,22 @@
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .title {
+    margin-top: rem(12);
+    font-size: font("xl");
+    font-weight: 900;
+    line-height: 1.2;
+    color: color("text");
+    transition: color 0.3s;
+  }
+
+  .desc {
+    margin-top: space("sm");
+    font-size: font("md");
+    color: color("text-soft");
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+}

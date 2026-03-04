@@ -1,0 +1,44 @@
+@use "sass:map";
+@use "./variables" as *;
+
+// 키 검증
+@function _get($m, $key, $name) {
+  @if map.has-key($m, $key) {
+    @return map.get($m, $key);
+  }
+  @error "❌ [#{$name}] 맵에 '#{$key}'라는 키가 없습니다. variables 파일을 확인하세요";
+}
+
+@function color($key, $opacity: null) {
+  $value: _get($colors, $key, "$colors");
+
+  @if $opacity != null {
+    @return rgba($value, $opacity);
+  }
+
+  @return $value;
+}
+
+@function space($key) {
+  @return _get($space, $key, "$space");
+}
+
+@function radius($key) {
+  @return _get($radius, $key, "$radius");
+}
+
+@function font($key) {
+  @return _get($font-size, $key, "$font-size");
+}
+
+@function bp($key) {
+  @return _get($breakpoints, $key, "$breakpoints");
+}
+
+@function ff($key: "default") {
+  @return _get($font-family, $key, "$font-family");
+}
+
+@function ease($key: "default") {
+  @return _get($easing, $key, "$easing");
+}

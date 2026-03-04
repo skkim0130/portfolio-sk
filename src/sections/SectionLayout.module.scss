@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: space("md");
+
+  .label {
+    font-size: rem(10);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    color: color("text-soft");
+    border-bottom: 1px solid color("text-soft");
+    padding-bottom: space("xs");
+  }
+}

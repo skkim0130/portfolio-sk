@@ -1,0 +1,27 @@
+@use "@/assets/scss/abstracts" as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: font("xs");
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-radius: rem(4);
+  white-space: nowrap;
+}
+
+.badge-default {
+  @extend .badge;
+  padding: rem(4) rem(8);
+  color: color("text-soft");
+  background: color("hairline");
+}
+
+.badge-primary {
+  @extend .badge;
+  padding: rem(2) rem(8);
+  color: color("primary");
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: color("accent-soft");
+}

@@ -1,0 +1,30 @@
+.side {
+  position: sticky;
+  top: $header-height;
+  flex: 0 0 rem(400);
+  height: calc(100vh - #{$header-height});
+  padding: space("3xl") space("xxl");
+  border-right: 1px solid color("border");
+
+  overflow-y: auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond("md") {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: space("xl") space("lg");
+    border-right: none;
+    border-bottom: 1px solid color("border");
+    overflow-y: visible;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: space("xl");
+  }
+}

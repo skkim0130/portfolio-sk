@@ -23,7 +23,7 @@ export default defineConfig({
         // 모든 SCSS 파일에 자동으로 주입
         additionalData: `
           @use "sass:map";
-          @use "@/assets/scss/utils" as *;
+          @use "@/assets/scss/abstracts" as *;
         `,
       },
     },

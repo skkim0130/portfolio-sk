@@ -1,0 +1,15 @@
+export const STACK_TAGS = [
+  "HTML5",
+  "CSS3",
+  "웹접근성",
+  "SCSS",
+  "JavaScript",
+  "jQuery",
+  "Git",
+  "Figma",
+  "Adobe XD",
+  "Adobe Photoshop",
+  "Salesforce",
+  "Veeva/IQVIA",
+  "React",
+];

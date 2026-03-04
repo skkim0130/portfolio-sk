@@ -1,0 +1,43 @@
+.worksItem {
+  border-bottom: 1px solid color("border");
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: space("lg");
+  padding: space("xl") 0;
+  text-align: left;
+  transition: transform 0.4s ease("default");
+
+  &:hover {
+    transform: translateX(space("md"));
+
+    .title {
+      color: color("primary");
+    }
+
+    .chev {
+      color: color("primary");
+      transform: translate(rem(4), rem(-4));
+    }
+  }
+
+  @include respond("md") {
+    padding: space("lg") 0;
+    gap: space("md");
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.chev {
+  margin-top: rem(6);
+  font-size: rem(20);
+  color: color("muted");
+  transition: all 0.3s ease("default");
+}
