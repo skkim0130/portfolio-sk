@@ -112,8 +112,8 @@ const RAW_WORKS = [
   {
     id: "amore-newssquare",
     title: "아모레퍼시픽 뉴스스퀘어",
-    desc: "사내 뉴스 및 콘텐츠 사이트 리뉴얼 프로젝트",
-    category: "Platform",
+    desc: "기업 뉴스 콘텐츠 사이트 리뉴얼 프로젝트",
+    category: "Corporate Newsroomb",
     keyFeatures: [
       "뉴스·칼럼·영상 등 다양한 콘텐츠 유형에 맞춘 정보 구조 정리",
       "대규모 콘텐츠 노출을 고려한 리스트 및 상세 마크업 개선",
