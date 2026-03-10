@@ -1,4 +1,4 @@
-# Sunkyoung Kim | Web Publisher Portfolio
+# Sunkyung Kim | Web Publisher Portfolio
 
 React 기반으로 제작한 포트폴리오 사이트입니다.
 
