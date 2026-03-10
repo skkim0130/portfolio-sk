@@ -8,15 +8,15 @@ React 컴포넌트 구조와 SCSS 모듈화를 통해 재사용성과 유지보�
 🔗 Live  
 https://skkim0130.github.io/portfolio-sk/
 
-🔗 Github  
+🔗 GitHub  
 https://github.com/skkim0130/portfolio-sk/
 
 ## Tech Stack
 
-- React
-- Vite
-- SCSS
-- GitHub Pages
+- **Core:** HTML5, CSS3/SCSS, JavaScript
+- **Framework:** React
+- **Tool:** Vite
+- **Deploy:** GitHub Pages
 
 ## Features
 
