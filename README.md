@@ -1,16 +1,32 @@
-# React + Vite
+# Web Publisher Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React 기반으로 제작한 웹 퍼블리셔 포트폴리오입니다.
 
-Currently, two official plugins are available:
+프로필·경력 정보와 프로젝트를 분리된 레이아웃으로 구성했으며  
+React 컴포넌트 구조와 SCSS 모듈화를 통해  
+재사용성과 유지보수를 고려한 퍼블리싱 구조로 구현했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live  
+https://skkim0130.github.io/portfolio-sk/
 
-## React Compiler
+🔗 Github  
+https://github.com/skkim0130/portfolio-sk/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- SCSS
+- GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- React 컴포넌트 기반 UI 구조
+- SCSS 구조 분리 (abstracts/base/components)
+- CSS Modules를 활용한 컴포넌트 단위 스타일 관리
+- 반응형 웹 기반 레이아웃 구현
+- 프로젝트 리스트 및 상세 모달 UI
+
+## Deploy
+
+GitHub Pages
