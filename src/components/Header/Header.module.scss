@@ -27,4 +27,16 @@
     font-weight: 800;
     color: color("text");
   }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    gap: space("sm");
+
+    @include respond("md") {
+      a > span {
+        display: none;
+      }
+    }
+  }
 }

@@ -1,60 +1,66 @@
 .meta {
   margin-top: space("xl");
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: space("xl");
-  padding: space("lg");
+  align-items: stretch;
+  padding: space("lg") 0;
   border: 1px solid color("border");
-  border-radius: radius("lg");
-  background: rgba(color("gray-bg"), 0.6);
+  background: color("gray-bg", 0.4);
+  border-radius: radius("md");
 
   @include respond("md") {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding-top: space("xs");
-    padding-bottom: space("xs");
+    grid-template-columns: repeat(2, 1fr);
+    gap: space("md");
+    padding: space("md");
   }
 
   &Item {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: space("sm");
+    align-items: center;
+    text-align: center;
+    gap: space("xs");
+    padding: 0 space("sm");
+    border-left: 1px dashed color("border");
+
+    &:first-child {
+      border-left: none;
+    }
 
     .label {
       font-size: rem(10);
-      color: color("text-weak");
+      color: color("muted");
       font-weight: 800;
       letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
     .value {
+      display: flex;
+      align-items: center;
+      min-height: rem(26);
       font-size: font("md");
-      color: color("text");
       font-weight: 500;
+      color: color("text");
+
+      @include respond("md") {
+        min-height: auto;
+      }
     }
 
     @include respond("md") {
-      flex-direction: row;
-      align-items: center;
-      padding: space("sm") 0;
-      border-bottom: 1px dashed color("hairline");
+      align-items: stretch;
+      border-left: none;
+      text-align: left;
 
-      &:last-of-type {
-        border-bottom: none;
-      }
-
-      .label {
-        width: rem(78);
+      &.linkItem {
+        grid-column: span 2;
+        margin-top: space("xs");
+        padding-top: space("sm");
+        border-top: 1px dashed color("hairline");
       }
     }
-  }
-
-  .linkBtn {
-    align-self: flex-start;
   }
 }
 
