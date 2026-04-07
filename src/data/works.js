@@ -34,8 +34,8 @@ const RAW_WORKS = [
   {
     id: "gilead-hivision",
     title: "길리어드 HIVISION 사이트",
-    desc: "HIV 관련 학술·질환 정보를 제공하는 의료 전문가 대상 브랜드 사이트 신규 구축 및 운영",
-    category: "Brand Site",
+    desc: "HIV 관련 질환 정보를 누구나 이해할 수 있도록 제공하는 콘텐츠 사이트 신규 구축 및 운영",
+    category: "Content Site",
     keyFeatures: [
       "다량의 학술 콘텐츠를 고려한 정보 중심 마크업 구조 구성",
       "영상·퀴즈·슬라이드 등 인터랙션 UI 구현",
@@ -82,8 +82,8 @@ const RAW_WORKS = [
   {
     id: "jeisys-drjasmine",
     title: "제이시스메디컬 닥터자스민",
-    desc: "Zoom 연동 웨비나 서비스 UI 신규 구축",
-    category: "Web Service",
+    desc: "Zoom 연동 웨비나 콘텐츠 웹사이트 신규 구축",
+    category: "Content Site",
     keyFeatures: [
       "웨비나 리스트 및 상세 화면 UI 퍼블리싱",
       "Zoom 라이브 영상 연동 영역을 고려한 화면 분할 레이아웃 구현",
@@ -96,12 +96,12 @@ const RAW_WORKS = [
   },
   {
     id: "santen-alesion",
-    title: "한국산텐제약 알레지온",
-    desc: "심포지엄 콘텐츠 열람 중심의 인터랙티브 브랜드 사이트 신규 구축",
-    category: "Brand Site",
+    title: "글로벌 제약사 학술 심포지엄 아카이브 웹사이트",
+    desc: "학술 심포지엄 콘텐츠를 세션 기반으로 구성하여 영상 및 정보를 제공하는 인터랙티브 웹사이트 구축 및 운영",
+    category: "Content Site",
     keyFeatures: [
-      "메인 비주얼 애니메이션 및 전환 효과 구현",
-      "심포지엄 세션 카드 Swiper UI 구성",
+      "인터랙티브 메인 비주얼 애니메이션 및 트랜지션 구현",
+      "심포지엄 세션 카드 콘텐츠 탐색 중심의 Swiper 기반 인터랙션 UI 설계 및 구현",
       "영상 모달 플레이어 UI 퍼블리싱",
     ],
     role: "퍼블리싱 100%",
