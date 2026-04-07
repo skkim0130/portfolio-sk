@@ -4,7 +4,7 @@ const RAW_WORKS = [
   {
     id: "admin-platform",
     title: "사내 관리자 UI 플랫폼",
-    desc: "파편화된 관리자 UI를 공통 컴포넌트로 통합한 관리자 플랫폼 신규 구축",
+    desc: "파편화된 관리자 UI를 공통 컴포넌트로 통합한 관리자 플랫폼 구축",
     category: "Platform",
     keyFeatures: [
       "Bootstrap 및 레거시 코드 정리 후 HTML/SCSS 기반 공통 템플릿 구성",
@@ -20,7 +20,7 @@ const RAW_WORKS = [
   {
     id: "hr-system",
     title: "사내 인사평가 시스템",
-    desc: "문서 기반으로 진행되던 인사평가를 웹 시스템으로 전환한 사내 시스템 신규 구축",
+    desc: "문서 기반으로 진행되던 인사평가를 웹 시스템으로 전환한 사내 시스템 구축",
     category: "Platform",
     keyFeatures: [
       "점수 입력을 터치 슬라이더 방식으로 구현하여 직관적인 인터랙션 제공",
@@ -34,7 +34,7 @@ const RAW_WORKS = [
   {
     id: "gilead-hivision",
     title: "길리어드 HIVISION 사이트",
-    desc: "HIV 관련 질환 정보를 누구나 이해할 수 있도록 제공하는 콘텐츠 사이트 신규 구축 및 운영",
+    desc: "HIV 관련 질환 정보를 누구나 이해할 수 있도록 제공하는 콘텐츠 사이트 구축 및 운영",
     category: "Content Site",
     keyFeatures: [
       "다량의 학술 콘텐츠를 고려한 정보 중심 마크업 구조 구성",
@@ -51,7 +51,7 @@ const RAW_WORKS = [
   {
     id: "veeva-iqvia",
     title: "Veeva·IQVIA CLM 콘텐츠",
-    desc: "제약사 iPad 환경에 최적화된 세일즈용 디지털 콘텐츠 구축 및 운영",
+    desc: "제약사 iPad 환경에 최적화된 디지털 콘텐츠 구축 및 운영",
     category: "Digital Content",
     keyFeatures: [
       "iPad 전용 해상도 및 터치 환경을 고려한 인터랙션 콘텐츠 구현",
@@ -67,7 +67,7 @@ const RAW_WORKS = [
   {
     id: "novo-kakao",
     title: "노보 노디스크 카카오톡 채널",
-    desc: "카카오톡 인앱 환경 기반 학술 콘텐츠 채널 신규 구축 및 운영",
+    desc: "카카오톡 인앱 환경 기반 학술 콘텐츠 채널 구축 및 운영",
     category: "Digital Content",
     keyFeatures: [
       "카카오톡 인앱 브라우저 환경 제약을 고려한 모바일 전용 UI 구현",
@@ -82,7 +82,7 @@ const RAW_WORKS = [
   {
     id: "jeisys-drjasmine",
     title: "제이시스메디컬 닥터자스민",
-    desc: "Zoom 연동 웨비나 콘텐츠 웹사이트 신규 구축",
+    desc: "Zoom 연동 웨비나 콘텐츠 웹사이트 구축",
     category: "Content Site",
     keyFeatures: [
       "웨비나 리스트 및 상세 화면 UI 퍼블리싱",
@@ -97,7 +97,7 @@ const RAW_WORKS = [
   {
     id: "santen-alesion",
     title: "글로벌 제약사 학술 심포지엄 아카이브 웹사이트",
-    desc: "학술 심포지엄 콘텐츠를 세션 기반으로 구성하여 영상 및 정보를 제공하는 인터랙티브 웹사이트 구축 및 운영",
+    desc: "학술 심포지엄 콘텐츠를 세션 기반으로 구성한 인터랙티브 웹사이트 구축 및 운영",
     category: "Content Site",
     keyFeatures: [
       "인터랙티브 메인 비주얼 애니메이션 및 트랜지션 구현",
