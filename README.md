@@ -41,7 +41,7 @@ https://skkim0130.github.io/portfolio-sk/
 
 ## SCSS Structure
 
-기능별로 스타일을 분리하여 유지보수성과 재사용성을 고려한 구조로 관리했습니다.
+기능별로 스타일을 분리하여 유지보수를 고려해 스타일을 기능별로 분리했습니다.
 
 ```scss
 assets/scss/
