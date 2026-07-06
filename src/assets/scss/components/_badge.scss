@@ -19,9 +19,9 @@
 
 .badge-primary {
   @extend .badge;
-  padding: rem(2) rem(8);
+  padding: rem(4) rem(6);
   color: color("primary");
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   background: color("accent-soft");
 }
