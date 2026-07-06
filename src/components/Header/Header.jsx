@@ -24,7 +24,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <h1 className={styles.logo}>
-          <a href="./">K.SUNKYUNG</a>
+          <a href="./">SUNKYUNG.K</a>
         </h1>
         <div className={styles.btns}>
           {btnLinks.map((link) => (
