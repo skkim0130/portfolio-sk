@@ -3,7 +3,7 @@ import SectionLayout from "../SectionLayout";
 import styles from "./Profile.module.scss";
 
 export default function Profile() {
-  const { name, role, intro, profileImg } = PROFILE_DATA;
+  const { name, role, career, intro, profileImg } = PROFILE_DATA;
 
   return (
     <SectionLayout title="profile">
@@ -20,7 +20,9 @@ export default function Profile() {
         <div className={styles.meta}>
           <div className={styles.nameGroup}>
             <span className={styles.name}>{name}</span>
-            <span className={styles.role}>{role}</span>
+            <span className={styles.sub}>
+              {role} · {career}
+            </span>
           </div>
           <p className={styles.intro}>{intro}</p>
         </div>

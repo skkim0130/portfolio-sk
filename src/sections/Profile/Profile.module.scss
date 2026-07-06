@@ -15,11 +15,11 @@
     .name {
       font-size: font("base");
       font-weight: 800;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.04em;
       color: color("text");
     }
 
-    .role {
+    .sub {
       font-size: rem(11);
       font-weight: 600;
       color: color("muted");
@@ -27,10 +27,11 @@
   }
 
   .intro {
-    padding: rem(6) rem(20) rem(6) rem(0);
+    padding: rem(6) rem(6) rem(6) rem(0);
     font-size: rem(13);
     font-weight: 600;
     line-height: 1.55;
+    letter-spacing: -0.04em;
     color: rgba(color("text"), 0.82);
     word-break: keep-all;
   }
