@@ -10,11 +10,15 @@ const WORK_CATEGORY = {
   ECOMMERCE: "E-Commerce",
 };
 
-const RAW_WORKS = [
+/**
+ * 이노부스트
+ * 2021 - 2024
+ */
+const INNOBOOST_WORKS = [
   {
     id: "admin-platform",
-    title: "사내 관리자 UI 플랫폼",
-    desc: "파편화된 관리자 UI를 공통 컴포넌트로 통합한 관리자 플랫폼 구축",
+    title: "관리자 UI 플랫폼",
+    desc: "파편화된 관리자 UI를 공통 컴포넌트 구조로 통합한 플랫폼 구축",
     category: WORK_CATEGORY.ADMIN,
     keyFeatures: [
       "Bootstrap 및 레거시 코드 정리 후 HTML/SCSS 기반 공통 템플릿 구성",
@@ -29,7 +33,7 @@ const RAW_WORKS = [
   },
   {
     id: "hr-system",
-    title: "사내 인사평가 시스템",
+    title: "인사평가 시스템",
     desc: "문서 기반으로 진행되던 인사평가를 웹 시스템으로 전환한 사내 시스템 구축",
     category: WORK_CATEGORY.HR,
     keyFeatures: [
@@ -65,8 +69,8 @@ const RAW_WORKS = [
     keyFeatures: [
       "iPad 전용 해상도 및 터치 환경을 고려한 인터랙션 콘텐츠 구현",
       "Veeva·IQVIA CLM 권장 가이드에 맞춘 슬라이드 구조 및 화면 전환 구성",
-      "Salesforce CRM 연동 환경을 고려한 콘텐츠 구성 및 운영",
-      "다수 국내외 제약사 CLM 프로젝트 경험",
+      "Salesforce 기반 운영 환경을 고려한 콘텐츠 구성 및 데이터 관리",
+      "다수 국내외 제약사 CLM 프로젝트 구축 및 운영",
     ],
     role: "퍼블리싱 100%",
     year: "2021 - 2024",
@@ -110,7 +114,7 @@ const RAW_WORKS = [
     category: WORK_CATEGORY.CONTENT,
     keyFeatures: [
       "인터랙티브 메인 비주얼 애니메이션 및 트랜지션 구현",
-      "심포지엄 세션 카드 콘텐츠 탐색 중심의 Swiper 기반 인터랙션 UI 설계 및 구현",
+      "심포지엄 세션 탐색을 위한 Swiper 기반 카드 인터랙션 UI 구현",
       "영상 모달 플레이어 UI 퍼블리싱",
     ],
     role: "퍼블리싱 100%",
@@ -118,6 +122,13 @@ const RAW_WORKS = [
     device: "PC · Mobile",
     subImageCount: 2,
   },
+];
+
+/**
+ * 아이뱅크
+ * 2015 - 2020
+ */
+const IBANK_WORKS = [
   {
     id: "amore-newssquare",
     title: "아모레퍼시픽 뉴스스퀘어",
@@ -149,7 +160,7 @@ const RAW_WORKS = [
   {
     id: "innisfree-mc",
     title: "이니스프리 온라인몰 프로모션",
-    desc: "신제품 론칭 중심의 마케팅 커뮤니케이션 프로모션 콘텐츠 제작 및 운영",
+    desc: "신제품 론칭 중심의 마케팅 프로모션 콘텐츠 제작 및 운영",
     category: WORK_CATEGORY.ECOMMERCE,
     keyFeatures: [
       "신제품 출시 및 프로모션 이벤트 페이지 제작",
@@ -201,6 +212,13 @@ const RAW_WORKS = [
     year: "2015.09 - 2015.11",
     device: "PC",
   },
+];
+
+/**
+ * 이전 경력
+ * 2014 - 2015
+ */
+const EARLY_CAREER_WORKS = [
   {
     id: "sheraton-walkerhill",
     title: "쉐라톤 워커힐 호텔",
@@ -230,11 +248,13 @@ const RAW_WORKS = [
   },
 ];
 
-export const WORKS_DATA = RAW_WORKS.map((item) => {
-  const { id, subImageCount = 0 } = item;
-  return {
-    ...item,
+const RAW_WORKS = [...INNOBOOST_WORKS, ...IBANK_WORKS, ...EARLY_CAREER_WORKS];
+
+export const WORKS_DATA = RAW_WORKS.map(
+  ({ id, subImageCount = 0, ...work }) => ({
+    id,
+    ...work,
     mainImg: PATH.WORK_MAIN(id),
     subImgs: subImageCount > 0 ? PATH.WORK_SUBS(id, subImageCount) : [],
-  };
-});
+  })
+);
