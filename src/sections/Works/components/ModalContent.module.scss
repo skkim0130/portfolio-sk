@@ -43,6 +43,7 @@
       font-size: font("md");
       font-weight: 500;
       color: color("text");
+      letter-spacing: -0.01em;
 
       @include respond("md") {
         min-height: auto;
