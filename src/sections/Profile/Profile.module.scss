@@ -15,7 +15,7 @@
     .name {
       font-size: font("base");
       font-weight: 800;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.02em;
       color: color("text");
     }
 
@@ -31,7 +31,7 @@
     font-size: rem(13);
     font-weight: 600;
     line-height: 1.55;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.02em;
     color: rgba(color("text"), 0.82);
     word-break: keep-all;
   }
